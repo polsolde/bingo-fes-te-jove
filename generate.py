@@ -30,7 +30,7 @@ def generate_cards(seed_value):
         r0, r1, c = options[choice]
         amounts[r0, c], amounts[r1, c] = amounts[r1, c], amounts[r0, c]
         iter += 1
-        assert iter < 100
+        assert iter < 500
     perm_decades = [list(r.permutation(np.arange(start[i], 1+end[i]))) for i in range(9)]
     numbers = [[None for _ in range(9)] for _ in range(6)]
     for col in range(9):
